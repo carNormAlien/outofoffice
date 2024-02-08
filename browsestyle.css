@@ -18,7 +18,17 @@ h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 5%;
+}
+.questiontainer {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-right: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-color: cornflowerblue;
+    opacity: 0.95;
 }
 ul {
     margin-top: 10%;
