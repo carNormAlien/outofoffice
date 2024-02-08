@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<head>
+    <link href="browsestyle.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+
+    <style>
+        @font-face {
+        /* font-family: "Rubik Glitch Pop Regular 400"; */
+        font-family: 'Tsukimi Rounded', sans-serif;
+        src: url("https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@500&display=swap");
+        }
+        body {
+            font-family: 'Tsukimi Rounded', sans-serif;
+        }
+    </style>
+</head>
+<header>
+
+</header>
+<body>
+    <h2>Welcome</h2>
+    <ul>
+        <li class="questionText">How can authorship be distributed with this medium?
+            <div><input type="text" id="author" name="author" placeholder="What do you think?" class="author"> </div>
+        </li>
+        <li class="questionText">What kind of networked browsing can be described as function-non-oriented movement?</li>
+        <li class="questionText">is the slouching forward of my shoulders FNOM?</li>
+        <li class="questionText">what does it look like to make a collage of hypertext?
+        <div class="checkdiv">
+            <label>
+            <a href="textcollage1.html">text?</a>
+            </label>
+          </div>
+        <div class="checkdiv">
+            <label for="">
+            <a href="textcollage2.html">hyper?</a>
+            </label>
+          </div>
+        </li>
+        <li class="questionText">how can I use borders in a way that could be described as <span style="font-style: italic;">expanded techniques</span>?</li>
+        <li class="questionText">Is it possible to make an artwork which is also a website that doesn't reference Foucault?
+            <div class="checkdiv">
+              <input type="checkbox" id="yes" onclick="checkyesFunc()"/>
+              <label for="yes" class="response">Yeah duh! oh wait nah...</label>
+              <p id="yesResult" class="answer"> "Hypertext Programs and the net are webs of footnotes without 
+                central points, organising principals, hierarchies ...And yet they are also-and have always been- immanent to all and 
+                every piece of written work. "The frontiers of the book" wrote Michel Foucault, long before these modes of writing 
+                hypertext to retrieving data from the net emerged "are never clear-cut: beyond the title, the first lines, and the 
+                last full stop, beyond its internal configurations and its autonomous form, it is caught in a system of references 
+                to other books, other texts, other sentences; it is a node within network" Quote from Sadie Plant quoting 
+                Michel Foucault, from an exerpt found in CyberFeminism Index</p>
+            </div>
+            <div class="checkdiv">
+                <input type="checkbox" id="no" onclick="checknoFunc()"/>
+                <label for="no" class="response">nope, no way, no how</label>
+                <p id="noResult" style="display: none;" class="answer"> Matrix said so, he's gotta be in ya bib.</p>
+            </div>
+            <div class="checkdiv">
+                <input type="checkbox" id="unsure" onclick="checkunsureFunc()"/>
+                <label for="unsure" class="response">???</label>
+                <p id="unsureResult" class="answer"> foocolt? fullcoo?</p>
+            </div>
+        </li>
+    </ul>
+    <!-- <div class="quesdiv">
+        <div>
+        <h3>Is it possible to make an artwork which is also a website that doesn't reference Foucault?</h3>
+        <select name="selection" id="queso1" class="ques1">
+            <option value="1">???</option>
+            <option value="3">Sadie Plant says Yeah duh! - oh wait! "Hypertext Programs and the net are webs of footnotes without 
+            central points, organising principals, hierarchies ...And yet they are also-and have always been- immanent to all and 
+            every piece of written work. "The frontiers of the book" wrote Michel Foucault, long before these modes of writing 
+            hypertext to retrieving data from the net emerged "are never clear-cut: beyond the title, the first lines, and the 
+            last full stop, beyond its internal configurations and its autonomous form, it is caught in a system of references 
+            to other books, other texts, other sentences; it is a node within network</option>
+            <option value="2">no way no how, Matrix said so.</option>
+            <option value="4">foocolt? fullcoo?</option>
+            <option value="1">???</option>
+        </select>
+    </div>
+    <div>
+        <fieldset>
+            <legend class="questionText">Is it possible to make an artwork which is also a website that doesn't reference Foucault?</legend>
+            <div class="checkdiv">
+              <input type="checkbox" id="yes" onclick="checkyesFunc()"/>
+              <label for="yes">Yeah duh! oh wait nah...</label>
+                <p id="yesResult" class="answer"> "Hypertext Programs and the net are webs of footnotes without 
+                central points, organising principals, hierarchies ...And yet they are also-and have always been- immanent to all and 
+                every piece of written work. "The frontiers of the book" wrote Michel Foucault, long before these modes of writing 
+                hypertext to retrieving data from the net emerged "are never clear-cut: beyond the title, the first lines, and the 
+                last full stop, beyond its internal configurations and its autonomous form, it is caught in a system of references 
+                to other books, other texts, other sentences; it is a node within network" Quote from Sadie Plant quoting 
+                Michel Foucault, from and exerpt found in CyberFeminism Index</p>
+            </div>
+            <div class="checkdiv">
+                <input type="checkbox" id="no" onclick="checknoFunc()"/>
+                <label for="no">nope, no way, no how</label>
+                <p id="noResult" style="display: none;" class="answer"> Matrix said so, he's gotta be in ya bib.</p>
+            </div>
+            <div class="checkdiv">
+                <input type="checkbox" id="unsure" onclick="checkunsureFunc()"/>
+                <label for="unsure">???</label>
+                <p id="unsureResult" class="answer"> foocolt? fullcoo?</p>
+            </div> 
+        </div>-->
+              <script>
+                function checkyesFunc(){
+                    var yesCheck = document.getElementById("yes");
+                    var yesResult = document.getElementById("yesResult");
+
+                    if (yesCheck.checked == true){
+                        yesResult.style.display = "block";
+                    } else {
+                        yesResult.style.display = "none";
+                    }
+                }
+
+                function checknoFunc(){
+                    var noCheck = document.getElementById("no");
+                    var noResult = document.getElementById("noResult");
+
+                    if (noCheck.checked == true){
+                        noResult.style.display = "block";
+                    } else {
+                        noResult.style.display = "none";
+                    }
+                }
+
+                function checkunsureFunc(){
+                    var unsureCheck = document.getElementById("unsure");
+                    var unsureResult = document.getElementById("unsureResult");
+
+                    if (unsureCheck.checked == true){
+                        unsureResult.style.display = "block";
+                    } else {
+                        unsureResult.style.display = "none";
+                    }
+                }
+              </script>
+            <div class="imagecontainer"></div>  
+            
+            </body>
