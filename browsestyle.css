@@ -1,0 +1,97 @@
+
+html {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(misc_1.png);
+    background-size: 333px;
+    background-repeat: repeat;
+}
+h1 {
+    margin-top: 7%;
+    margin-bottom: 7%;
+    text-align: center;
+    transform: rotate(6deg);
+    text-shadow: 1px 1px 2px darkslateblue, 0 0 1em cornflowerblue, 0 0 0.2em blue;
+    color: blue;
+
+}
+ul {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-right: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-color: cornflowerblue;
+    opacity: 0.95;
+}
+li {
+    
+}
+div {
+
+}
+/* classes*/
+.checkdiv{
+    margin: 2%;
+    background-color: aquamarine;
+    border: thick double darkslateblue; 
+}
+.answer {
+    display: none; 
+    padding-right: 5%; 
+    padding-left: 5%;
+    text-align: right;
+    color: cornflowerblue;
+}
+.response {
+    color: cornflowerblue;
+}
+.questionText {
+    padding: 2%;
+    background-color: darkslateblue;
+    color: lightskyblue;
+    font-size: 100%;
+    font-weight: bolder;
+    border-color: cornflowerblue;
+    border-width: 10%;
+    border-style: solid;
+}
+.author {
+    display: block;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 88%;
+    
+}
+
+
+/* classes not in use - depreciated */
+.ques1{ 
+    appearance: checkbox;
+    display: block;
+    flex-wrap: wrap;
+    width: 80%;
+    height:;
+}
+.quesdiv{ 
+    width: 80%;
+    display: block;
+}
+.container{
+    background-image: no-repeat center/80% url("misc_1.png");
+}
+.smalcontainer{
+    background-image: url("misc_1.jpg");
+    mix-blend-mode: multiply;
+}
+.digitalmooshy{
+    color: chartreuse;
+    font: "Fira Sans";
+}
+fieldset {
+    background-color: cornflowerblue;
+    border: thick dashed darkslateblue;
+}
+legend {
+}
