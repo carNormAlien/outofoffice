@@ -18,6 +18,7 @@ h1 {
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 5%;
 }
 ul {
     margin-top: 10%;
