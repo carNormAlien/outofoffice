@@ -14,6 +14,10 @@ h1 {
     color: blue;
 
 }
+.flexContainer {
+    display: flex;
+    align-items: center;
+}
 ul {
     margin-top: 10%;
     margin-bottom: 10%;
