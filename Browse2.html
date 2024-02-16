@@ -3,8 +3,8 @@
     <link href="browsestyle.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@500&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@500&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+    <!-- <meta name="viewport" content="width=device-width"> -->
 
     <style>
         @font-face {
@@ -18,18 +18,47 @@
     </style>
 </head>
 <header>
-
+<h2 style="
+    margin-top: 7%;
+    margin-bottom: 7%;
+    text-align: center;
+    text-shadow: 1px 1px 2px darkslateblue, 0 0 1em cornflowerblue, 0 0 0.2em blue;
+    color: blue;
+    font-size: 200%;
+    font-family: 'Rubik Glitch Pop', system-ui;"}>
+        Welcome</h2>
 </header>
 <body>
-    <h1>Questions I might ask in the making of an artwork that is also a website. </h1>
-    <ul>
+    <div class="flexContainer">
+        <div class="questiontainer">
         <li class="questionText">How can authorship be distributed with this medium?
             <div><input type="text" id="author" name="author" placeholder="What do you think?" class="author"> </div>
         </li>
+    </div>
+    <div class="questiontainer">
         <li class="questionText">What kind of networked browsing can be described as function-non-oriented movement?</li>
+    </div>
+    <div class="questiontainer">
         <li class="questionText">is the slouching forward of my shoulders FNOM?</li>
-        <li class="questionText">what does it look like to make a collage of hypertext?</li>
+    </div>
+    <div class="questiontainer">
+        <li class="questionText">what does it look like to make a collage of hypertext?
+        <div class="checkdiv">
+            <label>
+            <a href="textcollage1.html">text?</a>
+            </label>
+          </div>
+        <div class="checkdiv">
+            <label for="">
+            <a href="browse1">hyper?</a>
+            </label>
+          </div>
+        </li>
+    </div>
+    <div class="questiontainer">
         <li class="questionText">how can I use borders in a way that could be described as <span style="font-style: italic;">expanded techniques</span>?</li>
+    </div>
+    <div class="questiontainer">
         <li class="questionText">Is it possible to make an artwork which is also a website that doesn't reference Foucault?
             <div class="checkdiv">
               <input type="checkbox" id="yes" onclick="checkyesFunc()"/>
@@ -53,7 +82,7 @@
                 <p id="unsureResult" class="answer"> foocolt? fullcoo?</p>
             </div>
         </li>
-    </ul>
+    </div>
     <!-- <div class="quesdiv">
         <div>
         <h3>Is it possible to make an artwork which is also a website that doesn't reference Foucault?</h3>
@@ -129,6 +158,5 @@
                     }
                 }
               </script>
-            <div class="imagecontainer"></div>  
-            
+    </div>
             </body>
